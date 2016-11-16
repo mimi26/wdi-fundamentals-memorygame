@@ -5,12 +5,45 @@ var cardTwo = "queen";
 var cardThree = "king";
 var cardFour = "king";
 
-if (cardOne === cardTwo) {
+if (cardOne===cardTwo) {
 	alert("You found a match!")
-} else if (cardThree === cardFour) {
-	alert("You found a match!")
-} else if (cardTwo === cardFour) {
-	alert("Sorry, try again.")
-} else if (cardOne === cardThree) {
+} else {
 	alert("Sorry, try again.")
 }
+
+if (cardOne===cardThree) {
+	alert("You found a match!")
+} else {
+	alert("Sorry, try again.")
+}
+
+if (cardOne===cardFour) {
+	alert("You found a match!")
+} else {
+	alert("Sorry, try again.")
+}
+
+if (cardTwo===cardThree) {
+	alert("You found a match!")
+} else {
+	alert("Sorry, try again.")
+}
+
+if (cardTwo===cardFour) {
+	alert("You found a match!")
+} else {
+	alert("Sorry, try again.")
+}
+
+if (cardThree===cardFour) {
+	alert("You found a match!")
+} else {
+	alert("Sorry, try again.")
+}
+
+
+
+
+// var board = document.getElementById('game-board');
+
+// for (var i; var)
