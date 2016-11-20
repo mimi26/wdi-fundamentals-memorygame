@@ -9,7 +9,7 @@ from Unit 1 - 5 below  */
 }
 
 .card {
-	height: 200px;
+	height: 230px;
 	width: 150px;
 	border: 1px solid black;
 	background: yellow;
@@ -69,8 +69,9 @@ footer {
 }
 
 img {
-	height: 200px;
-	width: 120px;
+	height: 230px;
+	width: 150px;
+	border-radius: 10px;
 }
 
 .box {

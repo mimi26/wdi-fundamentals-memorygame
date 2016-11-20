@@ -47,17 +47,15 @@ function isTwoCards() {
 
 //check for match and display appropriate message.
   function isMatch(cards) {
+   
   var message = document.getElementById('message');
   if (cards[0]===cards[1]) {
     message.innerHTML = "You found a match! (click button below to play again)"
   } else {
     message.innerHTML = "Sorry, try again! (click button below)"
   }
-  cardElement.innerHTML = '';
-  
 }
 createBoard();
-
 
 //refresh page on button click to start new game.
   var button = document.getElementById('newGame');
