@@ -45,19 +45,25 @@ function isTwoCards() {
 
 
 
-//check if the two cards in play are a match. Alert match or not.
+//check for match and display appropriate message.
   function isMatch(cards) {
-
-  	var cardElement = document.createElement('div');
-
-  	if (cards[0]===cards[1]) {
-  		alert('You found a match!');
-  	} else {
-  		alert('Sorry, try again!');
-  	}
-  	cardElement.innerHTML = '';
+  var message = document.getElementById('message');
+  if (cards[0]===cards[1]) {
+    message.innerHTML = "You found a match! (click button below to play again)"
+  } else {
+    message.innerHTML = "Sorry, try again! (click button below)"
   }
-  createBoard();
+  cardElement.innerHTML = '';
+  
+}
+createBoard();
+
+
+//refresh page on button click to start new game.
+  var button = document.getElementById('newGame');
+  button.addEventListener('click', function() {
+    history.go(0);
+  });
 
 
 
